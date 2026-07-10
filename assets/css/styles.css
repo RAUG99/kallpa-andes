@@ -419,8 +419,8 @@ body.nav-open .nav-toggle span:last-child {
 }
 
 .service-card ul {
-  margin-top: auto;
-  padding-top: 1.4rem;
+  margin-top: 1.4rem;
+  padding-top: 0;
   color: rgba(16, 32, 35, 0.82);
 }
 
@@ -871,3 +871,46 @@ body.nav-open .nav-toggle span:last-child {
     padding: 24px;
   }
 }
+/* Ajuste de encabezado fijo compacto */
+.site-header {
+  min-height: 72px;
+  background: rgba(244, 241, 234, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.header-inner {
+  min-height: 72px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.brand-logo {
+  width: 165px;
+  height: auto;
+  display: block;
+}
+
+.hero {
+  padding-top: 108px;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    min-height: 64px;
+  }
+
+  .header-inner {
+    min-height: 64px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .brand-logo {
+    width: 155px;
+  }
+
+  .hero {
+    padding-top: 92px;
+  }
+} 
