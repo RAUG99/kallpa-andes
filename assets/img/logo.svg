@@ -1,0 +1,10 @@
+<svg width="336" height="88" viewBox="0 0 336 88" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kallpa Andes</title>
+  <desc id="desc">Logotipo textual de Kallpa Andes</desc>
+  <rect width="336" height="88" rx="18" fill="none"/>
+  <path d="M17 57L43.5 20L70 57H57.4L43.5 37.7L29.6 57H17Z" fill="#102023"/>
+  <path d="M36.4 57L43.5 47.2L50.6 57H36.4Z" fill="#B77A3B"/>
+  <text x="88" y="39" fill="#102023" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="1.8">KALLPA</text>
+  <text x="88" y="64" fill="#7B4D22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="5.1">ANDES</text>
+  <text x="217" y="63" fill="#657174" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">ENERGÍA · MINERÍA</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F6F3EC"/>
+  <circle cx="1050" cy="70" r="340" fill="#E4C59E" fill-opacity="0.45"/>
+  <path d="M100 412L222 230L344 412H286L222 322L158 412H100Z" fill="#102023"/>
+  <path d="M194 412L222 373L250 412H194Z" fill="#B77A3B"/>
+  <text x="420" y="285" fill="#102023" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="4">KALLPA</text>
+  <text x="424" y="363" fill="#7B4D22" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="14">ANDES</text>
+  <text x="428" y="425" fill="#657174" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="5">ENERGÍA · MINERÍA · TERRITORIO</text>
+</svg>
