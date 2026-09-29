@@ -955,19 +955,22 @@ body.nav-open .nav-toggle span:last-child {
     row-gap: 18px;
   }
 
+  .experience-card {
+    gap: 34px;
+    padding: 40px;
+  }
+
   .experience-client {
     min-height: auto;
-    padding: 34px 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    padding: 0;
   }
 
   .experience-copy {
-    padding: 42px 0;
+    padding: 0;
   }
 
   .experience-logo {
-    max-width: 280px;
+    max-width: 290px;
   }
 
   .cards-grid,
@@ -1082,16 +1085,23 @@ body.nav-open .nav-toggle span:last-child {
     margin-bottom: 34px;
   }
 
+  .experience-card {
+    gap: 28px;
+    padding: 26px 22px;
+    border-radius: 14px;
+  }
+
   .experience-client {
-    padding: 28px 0;
+    padding: 0;
   }
 
   .experience-logo {
-    max-width: 245px;
+    max-width: 250px;
+    padding: 18px;
   }
 
   .experience-copy {
-    padding: 34px 0 38px;
+    padding: 0;
   }
 
   .experience-copy h3 {
