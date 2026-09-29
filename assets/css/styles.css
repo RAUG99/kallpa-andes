@@ -967,3 +967,175 @@ body.nav-open .nav-toggle span:last-child {
     transform: translateY(14px) scale(1.36);
   }
 }
+
+/* ================================
+   Experiencia / clientes
+================================ */
+.experience-section {
+  position: relative;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.34), rgba(255,255,255,0) 70%);
+}
+
+.experience-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.55fr);
+  column-gap: 72px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.experience-heading .eyebrow {
+  grid-column: 1 / -1;
+}
+
+.experience-heading h2 {
+  font-size: clamp(2.35rem, 5vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 0;
+  max-width: 780px;
+}
+
+.experience-heading > p:last-child {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+.experience-list {
+  display: grid;
+  gap: 18px;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  gap: 0;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.72);
+  overflow: hidden;
+}
+
+.experience-client {
+  min-height: 390px;
+  padding: clamp(28px, 4vw, 48px);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.experience-logo {
+  width: 100%;
+  max-width: 290px;
+}
+
+.experience-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
+  filter: saturate(0.88);
+}
+
+.experience-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.experience-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.experience-copy {
+  padding: clamp(32px, 5vw, 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-index {
+  margin-bottom: 1.2rem;
+  color: var(--accent-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.experience-copy h3 {
+  max-width: 720px;
+  margin-bottom: 1.15rem;
+  font-size: clamp(1.8rem, 3.1vw, 3.35rem);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.experience-copy > p:last-child {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+/*
+  Escalabilidad:
+  cada nueva empresa se agrega como otro .experience-card.
+  El layout se adapta automáticamente sin cambiar la estructura.
+*/
+
+@media (max-width: 940px) {
+  .experience-heading,
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-heading {
+    row-gap: 18px;
+  }
+
+  .experience-client {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .experience-logo {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience-heading {
+    margin-bottom: 32px;
+  }
+
+  .experience-card {
+    border-radius: 0;
+  }
+
+  .experience-client,
+  .experience-copy {
+    padding: 26px 22px;
+  }
+
+  .experience-logo {
+    max-width: 220px;
+  }
+}
