@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" role="img" aria-labelledby="title desc">
+  <title id="title">PPU | Philippi Prietocarrizosa Ferrero DU &amp; Uría</title>
+  <desc id="desc">Marca PPU recreada en formato vectorial para la sección de experiencia de Kallpa Andes.</desc>
+  <rect width="620" height="500" fill="#ffffff"/>
+  <rect x="12" y="22" width="12" height="362" fill="#06285f"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="300">
+    <text x="66" y="90" font-size="94" fill="#08a1b3">Philippi</text>
+    <text x="66" y="188" font-size="94" fill="#08a1b3">Prietocarrizosa</text>
+    <text x="66" y="286" font-size="94" fill="#08a1b3">Ferrero DU</text>
+    <text x="66" y="386" font-size="94" fill="#06285f">&amp; Uría</text>
+    <text x="66" y="486" font-size="47" fill="#6e8192">El estudio iberoamericano</text>
+  </g>
+</svg>
