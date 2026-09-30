@@ -375,34 +375,30 @@ body.nav-open .nav-toggle span:last-child {
 
 /* Experience */
 .experience-section {
-  position: relative;
   background: var(--surface);
 }
 
 .experience-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.55fr);
-  column-gap: 76px;
-  align-items: end;
-  margin-bottom: 52px;
+  max-width: 900px;
+  margin-bottom: 48px;
 }
 
 .experience-heading .eyebrow {
-  grid-column: 1 / -1;
+  margin-bottom: 0.9rem;
 }
 
 .experience-heading h2 {
   max-width: 820px;
   margin: 0;
-  font-size: clamp(2.7rem, 5.25vw, 5rem);
-  line-height: 0.97;
-  letter-spacing: -0.062em;
+  font-size: clamp(2.6rem, 4.6vw, 4.45rem);
+  line-height: 0.98;
+  letter-spacing: -0.058em;
   font-weight: 750;
 }
 
 .experience-heading > p:last-child {
-  max-width: 530px;
-  margin: 0 0 0.45rem;
+  max-width: 680px;
+  margin: 1.35rem 0 0;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.75;
@@ -410,37 +406,40 @@ body.nav-open .nav-toggle span:last-child {
 
 .experience-list {
   display: grid;
-  gap: 22px;
+  gap: 24px;
 }
 
 .experience-card {
   display: grid;
-  grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
-  gap: clamp(48px, 6vw, 86px);
-  align-items: center;
-  padding: clamp(40px, 5vw, 68px);
+  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1.3fr);
+  overflow: hidden;
+  border: 1px solid rgba(24,24,24,0.11);
   border-radius: 18px;
-  background: #eee8de;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(24,24,24,0.045);
 }
 
 .experience-client {
-  min-height: 0;
-  padding: 0;
+  padding: clamp(34px, 4.2vw, 54px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #eee8de;
 }
 
 .experience-logo {
-  width: min(100%, 360px);
-  padding: 24px;
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 16px 44px rgba(24, 24, 24, 0.055);
+  width: 100%;
+  max-width: 330px;
+  min-height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .experience-logo img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 175px;
   height: auto;
   object-fit: contain;
   object-position: left center;
@@ -450,52 +449,51 @@ body.nav-open .nav-toggle span:last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 22px;
+  margin-top: 28px;
 }
 
 .experience-meta span {
   display: inline-flex;
   align-items: center;
-  min-height: 31px;
-  padding: 0.36rem 0.7rem;
-  border: 0;
+  min-height: 30px;
+  padding: 0.35rem 0.68rem;
   border-radius: 999px;
-  background: rgba(182, 139, 45, 0.11);
-  color: #5f4b1f;
-  font-size: 0.72rem;
+  background: rgba(255,255,255,0.76);
+  color: #5c5140;
+  font-size: 0.71rem;
   font-weight: 700;
 }
 
 .experience-copy {
-  padding: 0;
+  padding: clamp(38px, 5vw, 64px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .experience-index {
-  margin-bottom: 1.15rem;
+  margin-bottom: 1rem;
   color: var(--accent-dark);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .experience-copy h3 {
-  max-width: 760px;
-  margin-bottom: 1.1rem;
-  font-size: clamp(2rem, 3.05vw, 3.15rem);
+  max-width: 720px;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 2.9vw, 3rem);
   line-height: 1.03;
-  letter-spacing: -0.048em;
+  letter-spacing: -0.047em;
   font-weight: 720;
 }
 
 .experience-copy > p:last-child {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.98rem;
   line-height: 1.8;
 }
 
@@ -937,7 +935,6 @@ body.nav-open .nav-toggle span:last-child {
   }
 
   .intro-grid,
-  .experience-heading,
   .experience-card,
   .approach-grid,
   .credentials-grid,
@@ -952,25 +949,24 @@ body.nav-open .nav-toggle span:last-child {
   }
 
   .experience-heading {
-    row-gap: 18px;
-  }
-
-  .experience-card {
-    gap: 34px;
-    padding: 40px;
+    max-width: 820px;
   }
 
   .experience-client {
-    min-height: auto;
-    padding: 0;
-  }
-
-  .experience-copy {
-    padding: 0;
+    padding: 36px;
   }
 
   .experience-logo {
-    max-width: 290px;
+    max-width: 280px;
+    min-height: 150px;
+  }
+
+  .experience-logo img {
+    max-height: 150px;
+  }
+
+  .experience-copy {
+    padding: 42px;
   }
 
   .cards-grid,
@@ -1086,22 +1082,25 @@ body.nav-open .nav-toggle span:last-child {
   }
 
   .experience-card {
-    gap: 28px;
-    padding: 26px 22px;
+    grid-template-columns: 1fr;
     border-radius: 14px;
   }
 
   .experience-client {
-    padding: 0;
+    padding: 28px 24px;
   }
 
   .experience-logo {
     max-width: 250px;
-    padding: 18px;
+    min-height: 132px;
+  }
+
+  .experience-logo img {
+    max-height: 132px;
   }
 
   .experience-copy {
-    padding: 0;
+    padding: 30px 24px 34px;
   }
 
   .experience-copy h3 {
