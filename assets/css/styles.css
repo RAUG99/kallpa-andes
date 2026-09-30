@@ -553,7 +553,7 @@ body.nav-open .nav-toggle span:last-child {
 .service-card h3 {
   min-height: 3.1em;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .service-card p,
